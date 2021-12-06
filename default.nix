@@ -13,11 +13,11 @@ in pkgs.haskell-nix.project {
         ${pkgs.autoconf}/bin/autoreconf -i
       '';
     }
-    {
-      packages.network.components.tests.spec.preConfigure = ''
-        ${pkgs.autoconf}/bin/autoreconf -i
-      '';
-    }
+    # {
+    #   packages.network.components.tests.spec.preConfigure = ''
+    #     ${pkgs.autoconf}/bin/autoreconf -i
+    #   '';
+    # }
   ];
 
   src = pkgs.haskell-nix.haskellLib.cleanGit {
