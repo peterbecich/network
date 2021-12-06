@@ -1,9 +1,0 @@
-resolver: lts-17.15
-packages:
-- '.'
-nix:
-  packages: [ ncurses ]
-
-# XXX workaround
-# https://github.com/commercialhaskell/stack/issues/2245
-hide-th-loading: false
